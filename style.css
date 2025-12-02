@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+:root {
+    color-scheme: light dark;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(ellipse at top, #3c096c, transparent),
+        radial-gradient(ellipse at bottom, #050505, transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Cal Sans", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.bg-ig{
+    background: linear-gradient(45deg, #FFD600,#FF7A00, #FF0069,#D300C5, #7638FA);
+}
+
+.bg-yt{
+    background-color: #FF0033;
+}
+
+.bg-git{
+    background: linear-gradient(180deg, #882294, #672286, #49227A);
+}
+
+.bg-lnk{
+    background-color: #0A66C2;
+}
+
+.bg-gml{
+    background: radial-gradient(ellipse at top, #FBBC04, #34A853);
+}
+
+a .rounded-pill{
+    filter: brightness(1);
+    transition: 200ms all ease-in-out;
+}
+
+a .rounded-pill:hover{
+    filter: brightness(0.8);
+}
+
+
+.links a{
+    position: relative;
+}
+
+.links a::after{
+    content: '';
+    background: #fff;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all ease-in-out 200ms;
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+.pills{
+    flex-wrap: wrap;
+}
+
+.pills a{
+    flex-grow: 1;
+    flex-basis: 200;
+}
